@@ -24,6 +24,14 @@
   .popup-content.active{
     visibility: visible;
   }
+  .hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
   </style>
 
 </head>
@@ -40,6 +48,12 @@
     </div>
   </div>
   <button class="open">Open</button>
+
+  <h2 class="mt-5">Display an Element on Hover</h2>
+
+<div class="myDIV bg-info">Hover over me.</div>
+<div class="hide">I am shown when someone hovers over the div above.</div>
+
 </div>
 
 
